@@ -37,15 +37,30 @@ section img {
     overflow: hidden;
 }
 
-.scroller_infographic {
-    -webkit-animation: scroller 13s ease-in-out 1.5s infinite alternate;
-    -moz-animation: scroller 13s ease-in-out 1.5s infinite alternate;
-    -o-animation: scroller 13s ease-in-out 1.5s infinite alternate;
-    animation: scroller 13s ease-in-out 1.5s infinite alternate;
+.scroller_about {
+    -webkit-animation: scroller_about 11s ease-in-out 1.5s infinite alternate;
+    -moz-animation: scroller_about 11s ease-in-out 1.5s infinite alternate;
+    -o-animation: scroller_about 11s ease-in-out 1.5s infinite alternate;
+    animation: scroller_about 11s ease-in-out 1.5s infinite alternate;
+}
+.scroller_free {
+    -webkit-animation: scroller_free 12s ease-in-out 1.5s infinite alternate;
+    -moz-animation: scroller_free 12s ease-in-out 1.5s infinite alternate;
+    -o-animation: scroller_free 12s ease-in-out 1.5s infinite alternate;
+    animation: scroller_free 12s ease-in-out 1.5s infinite alternate;
+}
+.scroller_news {
+    -webkit-animation: scroller_news 10s ease-in-out 1.5s infinite alternate;
+    -moz-animation: scroller_news 10s ease-in-out 1.5s infinite alternate;
+    -o-animation: scroller_news 10s ease-in-out 1.5s infinite alternate;
+    animation: scroller_news 10s ease-in-out 1.5s infinite alternate;
 }
 
 .opener h4 {
     margin-top: 40%;
+    z-index: 10;
+    position: relative;
+    color: rgba(255,255,255,0.4) !important;
 }
 
 .border {
@@ -70,7 +85,17 @@ section img {
 }
 
 
-@-webkit-keyframes scroller { from { margin-top:0%; } to { margin-top:-280%; }  }
-   @-moz-keyframes scroller { from { margin-top:0%; } to { margin-top:-280%; }  }
-     @-o-keyframes scroller { from { margin-top:0%; } to { margin-top:-280%; }  }
-        @keyframes scroller { from { margin-top:0%; } to { margin-top:-280%; }  }
+@-webkit-keyframes scroller_about { from { margin-top:0%; } to { margin-top:-150%; }  }
+   @-moz-keyframes scroller_about { from { margin-top:0%; } to { margin-top:-150%; }  }
+     @-o-keyframes scroller_about { from { margin-top:0%; } to { margin-top:-150%; }  }
+        @keyframes scroller_about { from { margin-top:0%; } to { margin-top:-150%; }  }
+
+@-webkit-keyframes scroller_free { from { margin-top:0%; } to { margin-top:-200%; }  }
+   @-moz-keyframes scroller_free { from { margin-top:0%; } to { margin-top:-200%; }  }
+     @-o-keyframes scroller_free { from { margin-top:0%; } to { margin-top:-200%; }  }
+        @keyframes scroller_free { from { margin-top:0%; } to { margin-top:-200%; }  }
+
+@-webkit-keyframes scroller_news { from { margin-top:0%; } to { margin-top:-125%; }  }
+   @-moz-keyframes scroller_news { from { margin-top:0%; } to { margin-top:-125%; }  }
+     @-o-keyframes scroller_news { from { margin-top:0%; } to { margin-top:-125%; }  }
+        @keyframes scroller_news { from { margin-top:0%; } to { margin-top:-125%; }  }
